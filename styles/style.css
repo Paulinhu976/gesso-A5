@@ -540,6 +540,10 @@ nav .close-icon {
   .contato .contato-info .right-side {
     width: 100%;
   }
+  .contato-info .left-side p {
+    font-size: 18px;
+    color: white;
+  }
 
   .contato-info .right-side {
     margin-bottom: 32px;
