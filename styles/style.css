@@ -7,10 +7,10 @@
 }
 
 body {
-  background-color: #f1f6fc31;
-  font-family: "Open Sans", sans-serif;
+  background-color: #e6e6e6;
+  font-family: "Brygada 1918", serif;
+  overflow-x: hidden;
 }
-
 section,
 footer {
   padding: 54px 0;
@@ -30,14 +30,15 @@ p {
 }
 
 .btn {
-  background-color: #4f9cf9;
+  background-color: #f5972c;
   color: white;
   padding: 15px 20px;
   border-radius: 10px;
   cursor: pointer;
   display: inline-block;
   transition: 0.4s;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  border: none;
 }
 
 .btn.btn-animate {
@@ -46,15 +47,6 @@ p {
 
 .btn:hover {
   background-color: #3580db;
-}
-
-@keyframes animate-outline {
-  from {
-    outline: 0px solid #4f9cf9;
-  }
-  to {
-    outline: 15px solid #4f9bf900;
-  }
 }
 
 header {
@@ -77,7 +69,7 @@ nav ul {
 }
 
 nav ul a {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
   margin: 0 25px;
   text-transform: uppercase;
@@ -125,12 +117,13 @@ nav .close-icon {
 .banner .banner-text h1 {
   font-size: 96px;
   color: white;
-  font-family: "Rubik", sans-serif;
+  font-family: "Brygada 1918", serif;
+  font-weight: bold;
 }
 
 .banner .banner-text p {
   font-size: 25px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
   color: #ffffffb7;
   margin: 18px 0;
@@ -148,12 +141,14 @@ nav .close-icon {
   padding: 0 40px;
 }
 .faca-mais .faca-mais-text h3 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Brygada 1918", serif;
   font-size: 56px;
+
+  color: rgb(92, 92, 92);
 }
 
 .faca-mais .faca-mais-text p {
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 5px 0 10px 0;
 }
 
@@ -161,178 +156,204 @@ nav .close-icon {
   width: 50%;
 }
 .faca-mais .faca-mais-img img {
+  transition: transform 0.2s; /* Animation */
   width: 100%;
   border-radius: 20%;
-}
-/*Formulario*/
-.formulario {
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgb(179, 177, 177);
 }
 
-.formulario form {
-  margin-left: 34%;
+.faca-mais .faca-mais-img img:hover {
+  transform: scale(1.1);
 }
 
-.orcamentos h3 {
-  text-align: center;
+/*Formulario*/
+
+.form {
+  max-width: 746px;
+  margin: 0 auto;
 }
-.orcamentos p {
+.form p {
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 34px;
 }
-.formulario .input-wrapper {
+
+.formulario {
+  min-height: 300px;
+  background: #fafafc;
+  border-radius: 8px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.formulario fieldset {
+  border: none;
+}
+.formulario fieldset legend {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: black;
+  width: 100%;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+
+.input-wrapper {
   display: flex;
   flex-direction: column;
 }
 .input-wrapper label {
-  margin-bottom: 5px;
-  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6c6a71;
+  margin-bottom: 8px;
 }
 
-.input-wrapper input {
-  background: #fafafa;
-  border: 1px solid #e6e6f0;
-  border-radius: 8px;
-  height: 56px;
-  width: 50%;
-  padding: 0 24px;
-  font-size: 15px;
-  font-family: "Open Sans", sans-serif;
-}
+.input-wrapper input,
 .input-wrapper select {
-  background: #fafafa;
+  background: #fafafc;
   border: 1px solid #e6e6f0;
+
   border-radius: 8px;
   height: 56px;
-  width: 50%;
   padding: 0 24px;
-  font-size: 15px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Brygada 1918", serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #272727;
 }
+
 .input-wrapper textarea {
-  background: #fafafa;
+  padding: 0;
+  height: 168px;
+  resize: none;
+  background: #fafafc;
   border: 1px solid #e6e6f0;
   border-radius: 8px;
-  height: 142px;
-  width: 50%;
-  padding: 0 24px;
+  font-family: "Brygada 1918", serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #c1bccc;
 }
-
-.formulario button {
-  border: none;
-  background-color: #4f9cf9;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 20%;
-  display: inline-block;
-  transition: 0.4s;
-  font-family: "Open Sans", sans-serif;
-  margin-left: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+.fundo {
+  background-image: url(/images/Colored\ Shapes\ 2.svg);
+  background-position: right;
+  background-size: cover;
+  opacity: 95%;
 }
-
-/*cards*/
-.depoimentos h3 {
-  text-align: center;
-}
-.depoimentos p {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.cards {
+/*Animation*/
+.tela {
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+.hidden-1 {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(100%);
+  transition: all 2s;
+}
+.hidden-2 {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateY(-100%);
+  transition: all 2s;
 }
 
-.depoimentos .card-item {
-  background-color: #d3e6fd;
-  margin: 15px;
-  border-radius: 14px;
-  text-align: center;
-  width: 350px;
-  transition: 0.6s;
-}
-.depoimentos .card-item img {
-  border-radius: 100%;
-  width: 80px;
-  display: block;
-  margin: 10px auto;
-}
-
-.depoimentos .card-item .nome-user {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 15px;
-  transition: 0.6s;
-}
-
-.depoimentos .card-item .depoimento-user {
-  font-size: 15px;
-  padding: 0 15px;
-  transition: 0.6s;
-}
-
-.depoimentos .card-item .estrelas {
-  margin: 15px 0;
-  border-top: 2px solid #71767a23;
-}
-
-.depoimentos .card-item .estrelas i {
-  color: #4f9cf9;
-  margin-top: 15px;
-  font-size: 20px;
-  transition: 0.6s;
-}
-
-.depoimentos .card-item:hover {
-  background-color: #4f9cf9;
-  margin-top: -5px;
-}
-
-.depoimentos .card-item:hover .nome-user,
-.depoimentos .card-item:hover .depoimento-user,
-.depoimentos .card-item:hover .estrelas i {
-  color: white;
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
 }
 
 /*Footer*/
 
 .footer {
-  background-color: #4f9cf9;
+  background-color: rgb(240, 240, 240);
   text-align: center;
 }
-
-.footer i {
-  color: #4f9cf9;
-  font-size: 25px;
-  background-color: white;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px rgb(179, 177, 177);
-  transition: 0.3s;
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer i:hover {
-  font-size: 30px;
+.footer .navegations {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .navegations a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 17px;
+  display: block;
 }
 
-.footer p {
-  margin-top: 10px;
-  color: white;
-  font-size: 20px;
+.footer .endereco {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
+
+.footer .container .icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 100px;
+  background-color: #fff;
+  margin: 20px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 72px;
+  font-family: sans-serif;
+  overflow: hidden;
+  box-shadow: 5px 10px 20px rgba(150, 150, 150, 0.3);
+  transition: all 0.3s ease-out;
+}
+.footer .container .icon:hover {
+  width: 300px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+}
+.footer .container .icon .fa-facebook-f {
+  color: #1a6ed8;
+}
+.footer .container .icon .fa-whatsapp {
+  color: #25d366;
+}
+.footer .container .icon .fa-instagram {
+  color: #e84393;
+}
+.footer .container .icon:hover i {
+  color: #fff;
+}
+
+.footer .container .fb:hover {
+  background: #1a6ed8;
+}
+.footer .container .wpp:hover {
+  background: #25d366;
+}
+.footer .container .insta:hover {
+  background: #e84393;
+}
+
 /*pagina sobre*/
 .sobreh3 {
   text-align: center;
-  margin-bottom: 124px;
+  margin-bottom: 128px;
   font-size: 86px;
 }
 .sobre .container {
@@ -422,6 +443,12 @@ nav .close-icon {
   border: none;
 }
 @media (max-width: 830px) {
+  .footer .container {
+    flex-direction: column;
+  }
+  .redes-sociais {
+    display: none;
+  }
   /*menu-mobile*/
   nav .menu-icon {
     display: block;
@@ -473,6 +500,7 @@ nav .close-icon {
   .faca-mais .faca-mais-img {
     width: 100%;
   }
+
   /*banner*/
   .banner .banner-text {
     padding: 0;

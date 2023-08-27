@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Rubik:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>sobre - Gesso A5 </title>
+</head>
+
+<body>
+  <!-- Header-->
+  <header style="background-image: url('images/fundo.jpg'), url(images/over.jpg); background-blend-mode:multiply ;">
+    <!--  container -->
+    <div class="container">
+      <nav>
+        <a href="index.html">
+          <img style=" height:124px ;" src="/images/logo5.png" alt="logo">
+        </a>
+        <ul class="ul">
+          <a href="index.html">Inicio</a>
+          <a href="orcamento.html">Orçamento</a>
+          <a href="servicos.html">Serviços</a>
+          <a class="btn" href="contato.html">Contato</a>
+          <div class="close-icon" onclick="closeMenu()">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </div>
+        </ul>
+        <div class="menu-icon" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <section class="banner">
+        <div class="banner-text hidden">
+          <h1>Orçamento</h1>
+          <p>Preencha nosso formulário que entraremos em contato com um orçamento personalizado para você!</p>
+        </div>
+      </section>
+    </div>
+    <!--  end container -->
+  </header>
+  <!-- End Header-->
+
+  <section class="fundo">
+
+    <div class="form">
+      <form action="https://formsubmit.co/gessoa5acartonados@gmail.com" method="POST" class="formulario">
+        <fieldset>
+          <legend>Preencha o formulário abaixo</legend>
+        </fieldset>
+        <div class="input-wrapper">
+          <label for="nome">Nome Completo</label>
+          <input type="text" name="name" id="nome" placeholder="Nome Completo" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email Para Contato</label>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="numero">Whatsapp Para Contato</label>
+          <input type="text" name="number" id="numero" placeholder="(11)95555-5555" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="tipoServico">Tipo de Serviço</label>
+          <select name="services" id="tipoServico">
+            <option value="">Instalação de drywall (Já possui material)</option>
+            <option value="">Instalação de drywall (Não possui material)</option>
+            <option value="">Gesso</option>
+            <option value="">Gesso 3D</option>
+            <option value="">Reparo de Gesso</option>
+          </select>
+        </div>
+        <div class="input-wrapper">
+          <label for="imovel">Qual o Tipo do Imóvel</label>
+          <select name="imovel" id="imovel">
+            <option value="">Casa</option>
+            <option value="">Apartamento</option>
+            <option value="">Sala/Conjunto Comercial</option>
+            <option value="">Galpão</option>
+            <option value="">Outro</option>
+          </select>
+        </div>
+        <div class="input-wrapper">
+          <label for="ambiente">Quantos Ambientes</label>
+          <select name="ambiente" id="ambiente">
+            <option value="">1 Ambiente</option>
+            <option value="">2 a 3 Ambientes</option>
+            <option value="">3 a 5 Ambientes</option>
+            <option value="">5 ou Mais</option>
+          </select>
+        </div>
+        <div class="input-wrapper">
+          <label for="tempo">Para quando você precisa do trabalho</label>
+          <select name="tempo" id="tempo">
+            <option value="">É urgente</option>
+            <option value="">Para os próximos dias</option>
+            <option value="">Quero negociar/Tenho duvidas</option>
+            <option value="">Estou apenas cotando o preço</option>
+          </select>
+        </div>
+        <div class="input-wrapper">
+          <label for="message">Observação (opcional)</label>
+          <textarea name="message" placeholder="Mensagem" id="message"></textarea>
+        </div>
+
+        <button class="btn btn-animate" type="submit">Enviar</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="navegations">
+        <a href="index.html">Inicio</a>
+        <a href="sobre.html">Orçamento</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contato</a>
+      </div>
+
+      <div class="endereco">
+        <div class="numero">
+          +55(62)99145-1634
+        </div>
+        <p>Av. Madri Qd.51 Lt.08</p>
+        <p>Jardim Europa / Goiânia-GO</p>
+      </div>
+      <div class="icons-teste">
+        <div class="icon fb">
+          <i class="fa-brands fa-facebook-f"></i>
+          <span>Facebook</span>
+        </div>
+
+        <div class="icon wpp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Whatsapp</span>
+        </div>
+
+        <div class="icon insta">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </div>
+      </div>
+
+    </div>
+    <p>© Copyright 2023 Indústria GessoA5 - Empresa de Drywall e Gesso | Assessoria Galato Multimídia -
+      Inteligência em Meios Digitais</p>
+  </footer>
+  <!-- end footer-->
+  <!-- end footer-->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
